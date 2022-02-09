@@ -29,7 +29,7 @@ main {
 
 .card {
     background: var(--card-bg);
-    width: 350px;
+    max-width: 350px;
     border: 1.25em var(--card-bg) solid;
     border-radius: 1em;
     box-shadow: 0px 0px 3em rgba(0,0,0,0.5);
@@ -76,6 +76,28 @@ h1:hover {
 }
 
 .container {
+    border-bottom: 1px var(--line) solid;
+    padding-bottom: 1em;
+}
+
+.container ul,
+li {
+    font-size: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price p {
+    color: var(--cyan);
+}
+
+li img {
+    margin-right: 5px;
+}
+
+/* old code switched to using ul instead
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -93,7 +115,7 @@ h1:hover {
     margin-left: 5px;
     font-size: 1rem;
 }
-
+*/
 .creator {
     display: flex;
     align-items: center;
